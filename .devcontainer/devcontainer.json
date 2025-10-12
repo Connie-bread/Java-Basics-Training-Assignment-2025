@@ -10,5 +10,5 @@
     }
   },
   "forwardPorts": [],
-  "postCreateCommand": "mvn -q -DskipTests=true package || true"
+  "postCreateCommand": "./.devcontainer/setup.sh"
 }
