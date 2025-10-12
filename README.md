@@ -1,7 +1,7 @@
 # Java Fundamentals Challenges
 
 Open this repo in GitHub Codespaces:
-[![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/YOUR_GITHUB_USERNAME/java-fundamentals-challenges)
+[![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/FRC-7525/Java-Basics-Training-Assignment-2025)
 
 ## How students should work
 1. Fork this repository (or "Use this template" if the repo is set as a template).
