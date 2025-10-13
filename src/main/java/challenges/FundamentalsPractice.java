@@ -56,7 +56,7 @@ public class FundamentalsPractice {
         // If strings are equal, return true. Else, return false
         // Hint: use .equals() to compare strings not ==
         // Do not care about capitals HI is equal to hi look up how to do.
-        return null;
+        return false;
     }
 
     /**
