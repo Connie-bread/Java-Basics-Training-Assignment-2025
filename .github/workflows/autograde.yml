@@ -1,4 +1,4 @@
-name: Autograde — Maven + Java 21
+name: Autograde
 
 on:
   push:
