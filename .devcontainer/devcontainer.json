@@ -1,14 +1,19 @@
 {
-  "name": "Java 17 Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/java:0-17",
+  "name": "Java 21 Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "vscjava.vscode-java-pack",
-        "redhat.java"
-      ]
+      "settings": {
+        "java.jdt.ls.java.home": "/usr/lib/jvm/msopenjdk-current",
+        "java.configuration.runtimes": [
+          {
+            "name": "JavaSE-21",
+            "path": "/usr/lib/jvm/msopenjdk-current"
+          }
+        ]
+      }
     }
   },
-  "forwardPorts": [],
-  "postCreateCommand": "./.devcontainer/setup.sh"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y maven",
+  "remoteUser": "vscode"
 }
