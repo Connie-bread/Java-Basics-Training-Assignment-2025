@@ -1,5 +1,5 @@
 # Java Fundamentals Challenges
-
+GUIDE TO SETUP: [HERE](https://scribehow.com/embed-preview/Steps_To_Setup_Java_Assignment__CqyXXTeFTDaFCM-mhlFFPg?as=slides&size=flexible)
 DUE: Next meeting
 Lmk if you have questions or can't complete it on time.
 
