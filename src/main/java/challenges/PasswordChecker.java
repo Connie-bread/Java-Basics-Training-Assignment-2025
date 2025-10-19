@@ -96,11 +96,11 @@ public class PasswordChecker {
         // System.out.println(strengthRate);
 
         if (strengthRate == 4 && cdLength == true) {
-            return "Your password is strong.";
+            return "Strong";
         } else if (strengthRate == 3 && cdLength == true) {
-            return "Your password is mid.";
+            return "Moderate";
         } else {
-            return "Your password is trash.";
+            return "Weak";
         }
     }
 

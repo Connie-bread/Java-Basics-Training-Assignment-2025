@@ -131,6 +131,9 @@ public class FundamentalsPractice {
                 prime = false;
             }
         }
+        if (n <= 1 ) {
+            prime = false;
+        }
         return prime;
     }
 
@@ -189,24 +192,25 @@ public class FundamentalsPractice {
 
         // for static methods (the fundprac.sum print code below) different than calling classes
 
-        System.out.println(FundamentalsPractice.sum(3,7));
+
+        
+
+        // System.out.println(FundamentalsPractice.sum(3,7));
+
+        // int[] someArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15};
+        // int[] result = FundamentalsPractice.fizzbuzz(someArray);
+        // System.out.println(Arrays.toString(result));
 
 
-
-        int[] someArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15};
-        int[] result = FundamentalsPractice.fizzbuzz(someArray);
-        System.out.println(Arrays.toString(result));
+        // System.out.println(FundamentalsPractice.reverseString("bestfriend"));
 
 
-        System.out.println(FundamentalsPractice.reverseString("bestfriend"));
+        // int[] maxArray = {1, 3, 1082, 86, 23};
+        // System.out.println(FundamentalsPractice.maxInArray(maxArray));
 
-
-        int[] maxArray = {1, 3, 1082, 86, 23};
-        System.out.println(FundamentalsPractice.maxInArray(maxArray));
-
-        System.out.println(FundamentalsPractice.stringsAreSame("hi", "hI"));
-        System.out.println(FundamentalsPractice.countVowels("eee"));
-        System.out.println(FundamentalsPractice.isPrime(9));
-        System.out.println(FundamentalsPractice.factorial(5));
+        // System.out.println(FundamentalsPractice.stringsAreSame("hi", "hI"));
+        // System.out.println(FundamentalsPractice.countVowels("eee"));
+        // System.out.println(FundamentalsPractice.isPrime(7));
+        // System.out.println(FundamentalsPractice.factorial(5));
     }
 }
