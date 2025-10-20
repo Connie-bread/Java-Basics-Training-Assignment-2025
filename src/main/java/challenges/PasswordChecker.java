@@ -59,45 +59,46 @@ public class PasswordChecker {
         // - Return the appropriate rating
         char[] charString = password.toCharArray();
         int strengthRate = 0;
-        boolean cd1 = false;
-        boolean cd2 = false;
-        boolean cd3 = false;
-        boolean cd4 = false;
-        boolean cdLength = false;
+        // cond = condition
+        boolean condUpper = false;
+        boolean condLower = false;
+        boolean condDigit = false;
+        boolean condSymbol = false;
+        boolean condLength = false;
 
         for (int i = 0; i < charString.length; i++) {
             if (Character.isUpperCase(charString[i]) == true) {
-                cd1 = true;
+                condUpper = true;
             } else if (Character.isLowerCase(charString[i])) {
-                cd2 = true;
+                condLower = true;
             } else if (Character.isDigit(charString[i])) {
-                cd3 = true;
+                condDigit = true;
             } else if (Character.isLetterOrDigit(charString[i]) == false) {
-                cd4 = true;
+                condSymbol = true;
             }
         }
 
         if (charString.length >= 8) {
-            cdLength = true;
+            condLength = true;
         }
         
-        if (cd1 == true) {
+        if (condUpper == true) {
             strengthRate++;
         } 
-        if (cd2 == true) {
+        if (condLower == true) {
             strengthRate++;
         } 
-        if (cd3 == true) {
+        if (condDigit == true) {
             strengthRate++;
         } 
-        if (cd4 == true) {
+        if (condSymbol == true) {
             strengthRate++;
         } 
         // System.out.println(strengthRate);
 
-        if (strengthRate == 4 && cdLength == true) {
+        if (strengthRate == 4 && condLength == true) {
             return "Strong";
-        } else if (strengthRate == 3 && cdLength == true) {
+        } else if (strengthRate == 3 && condLength == true) {
             return "Moderate";
         } else {
             return "Weak";

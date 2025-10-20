@@ -25,9 +25,9 @@ public class FundamentalsPractice {
      * Ex: Given [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15], you would RETURN: [3, 2, 1]
      */
     public static int[] fizzbuzz(int[] arr) {
-        int [] array = {0, 0, 0};
+        int[] array = {0, 0, 0};
         for (int num : arr) {
-            if (num % 3 == 0  && num % 5 == 0) {
+            if ((num % 3 == 0)  && (num % 5 == 0)) {
                 System.out.println("FizzBuzz");
                 array[2] += 1;
             } else if (num % 3 == 0) {
@@ -126,13 +126,15 @@ public class FundamentalsPractice {
     public static boolean isPrime(int n) {
         // Your code goes here
         boolean prime = true;
-        for (double i = 2; i <= Math.sqrt(n); i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 prime = false;
+                return prime;
             }
         }
         if (n <= 1 ) {
             prime = false;
+            return prime;
         }
         return prime;
     }
